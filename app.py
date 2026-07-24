@@ -14,7 +14,7 @@ model = pickle.load(open("model.sav", "rb"))
 
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
 
 
 @app.route('/', methods=['POST'])
